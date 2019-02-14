@@ -2,9 +2,9 @@
 	'use strict';
 
 	//version flag for updating
-	let version = "v0.0.2";
+	let version = "v0.0.3";
 	const offlinePages = [
-		'/',
+		'/'
 	];
 
 	//helper function for versioning cache names
@@ -19,7 +19,8 @@
 			.then(cache => cache.addAll([
 				'bg-pattern.png',
 				'pt_sans-web-regular-webfont.woff2',
-				'pt_sans-web-bold-webfont.woff2'
+                'pt_sans-web-bold-webfont.woff2',
+                'logo.svg'
 			].concat(offlinePages)))
 		);
 	});
