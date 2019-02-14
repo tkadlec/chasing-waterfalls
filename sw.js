@@ -2,7 +2,7 @@
 	'use strict';
 
 	//version flag for updating
-	let version = "v0.0.1";
+	let version = "v0.0.2";
 	const offlinePages = [
 		'/',
 	];
