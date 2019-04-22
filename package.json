@@ -1,0 +1,23 @@
+{
+  "name": "chasing-waterfalls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkadlec/chasing-waterfalls.git"
+  },
+  "author": "Tim Kadlec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tkadlec/chasing-waterfalls/issues"
+  },
+  "homepage": "https://github.com/tkadlec/chasing-waterfalls#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.8.2",
+    "clean-css": "^4.2.1"
+  }
+}
