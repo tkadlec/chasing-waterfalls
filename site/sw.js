@@ -17,10 +17,10 @@
 		event.waitUntil(
 			caches.open(cacheName('static'))
 			.then(cache => cache.addAll([
-				'bg-pattern.png',
-				'pt_sans-web-regular-webfont.woff2',
-                'pt_sans-web-bold-webfont.woff2',
-                'logo.svg'
+				'/img/bg-pattern.png',
+				'/fonts/pt_sans-web-regular-webfont.woff2',
+                '/fonts/pt_sans-web-bold-webfont.woff2',
+                '/img/logo.svg'
 			].concat(offlinePages)))
 		);
 	});
