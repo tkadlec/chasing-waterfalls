@@ -79,14 +79,18 @@ main p{
 }
 .subscribe-list{
     list-style-type: none;
-    display: flex;
+    display: grid;
     margin: 4em auto;
-    flex-wrap: wrap;
-    justify-content: space-between;
     max-width: 55em;
-    align-items: center;
     padding: 0;
-    align-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+@media screen and (min-width: 30em) {
+.subscribe-list {
+    grid-template-columns: repeat(4, 1fr);
+}
 }
 .subscribe-list img{
     max-width: 100%;
