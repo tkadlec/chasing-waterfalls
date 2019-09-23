@@ -88,9 +88,14 @@ main p{
 
 }
 @media screen and (min-width: 30em) {
-.subscribe-list {
-    grid-template-columns: repeat(4, 1fr);
+    .subscribe-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
+@media screen and (min-width: 53em) {
+    .subscribe-list {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
 .subscribe-list img{
     max-width: 100%;
