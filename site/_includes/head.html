@@ -1,108 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="theme-color" content="#10151C">
-    <title>{% if title %} {{title}} {% else %} {{site.title}}: {{site.description}} {% endif %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preload" href="/fonts/pt_sans-web-bold-webfont.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/pt_sans-web-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="icon" href="/img/favicon-96x96.png" sizes="96x96" type="image/png" />
-    <link rel="icon" href="/img/favicon-32x32.png" sizes="32x32" type="image/png" />
-    <link rel="icon" href="/img/favicon-16x16.png" sizes="16x16" type="image/png" />
-    <link rel="alternate" type="application/rss+xml" title="Chasing Waterfalls Podcast RSS feed" href="https://feeds.simplecast.com/kvH8KFGk" />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@tkadlec" />
-    <meta name="twitter:title" content="{{site.title}}" />
-    <meta name="twitter:description" content="Conversations with the people working to make the web faster for everyone, hosted by Tim Kadlec." />
-    <meta name="twitter:image" content="https://chasingwaterfalls.io/img/icon-512.png" />
-    <meta name="twitter:image:alt" content="Chasing Waterfalls Logo" />
-    <meta name="description" content="{{site.description}}" />
-    <style type="text/css">
-        @font-face {
-    font-family: 'pt_sansregular';
-    src: url('/fonts/pt_sans-web-bold-webfont.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: fallback;
-}
-@font-face {
-    font-family: 'pt_sansregular';
-    src: url('/fonts/pt_sans-web-regular-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: fallback;
-}
-.copy{
-    font-size: .9rem;
-}
-body{
-    margin: 0;
-    font: 100%/1.5em "pt_sansregular", Helvetica, Arial, sans-serif;
-    background: url(/img/bg-pattern.png) top left repeat #10151C;
-    color: rgba(255,255,255,.7);
-    display: grid;
-    align-items: center;
-    min-height: 100vh;
-    justify-self: center;
-}
-main{
-    padding: 4.5em 1em 8.5em 1em;
-    text-align: center;
-}
-main img{
-    max-width: 95%;
-}
-main iframe {
-    max-width: 45em;
-}
-main a, footer a{
-    color: #FD2E58;
-}
-main p{
-    font-size: 1.5em;
-    line-height: 1.4em;
-    max-width: 29em;
-    margin: 2em auto;
-}
-.attention{
-    font-size: 2em;
-    margin: 2.5em auto 3em;
-    text-align: center;
-    font-weight: bold;
-}
-.copy{
-    font-size: 1em;
-    max-width: 55em;
-}
-.subscribe-list{
-    list-style-type: none;
-    display: grid;
-    margin: 4em auto;
-    max-width: 55em;
-    padding: 0;
-    align-items: center;
-    grid-template-columns: repeat(2, 1fr);
-
-}
-@media screen and (min-width: 30em) {
-    .subscribe-list {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-@media screen and (min-width: 53em) {
-    .subscribe-list {
-        grid-template-columns: repeat(6, 1fr);
-    }
-}
-.subscribe-list img{
-    max-width: 100%;
-}
-.subscribe-list li{
-    padding: 1em 1em;
-}
-
-</style>
-</head>
+<header>
+    <a href="/">
+        <img class="logo" src="/img/logo.svg" alt="Chasing Waterfalls Logo">
+    </a>
+    <p>Conversations with the people working to make the web faster for everyone, hosted by <a href="https://timkadlec.com">Tim Kadlec</a>.</p>
+    <ul class="subscribe-list">
+        <li><a href="https://podcasts.apple.com/us/podcast/chasing-waterfalls/id1480725978"><img src="/img/apple-podcasts-icon.png" alt="Subscribe on Apple Podcasts" /></a></li>
+        <li><a href="https://open.spotify.com/show/3p2hroz3EJ40dbZyVOptQX"><img src="/img/spotify-icon.png" alt="Subscribe on Spotify" /></a></li>
+        <li><a href="https://pca.st/23zcfnb2"><img src="/img/pocket-casts-icon.png" alt="Subscribe on Pocket Casts" /></a></li>
+        <li><a href="https://www.stitcher.com/podcast/tim-kadlec/chasing-waterfalls?refid=stpr"><img src="/img/stitcher-icon.png" alt="Subscribe on Stitcher" /></a></li>
+        <li><a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS9rdkg4S0ZHaw%3D%3D"><img src="/img/google-podcasts-icon.png" alt="Subscribe with Google Podcasts" /></a></li>
+        <li><a href="https://feeds.simplecast.com/kvH8KFGk"><img src="/img/rss-icon.png" alt="Subscribe via RSS" /></a></li>
+    </ul>
+</header>

@@ -1,25 +1,27 @@
-{% include head.html %}
+{% include siteHead.html %}
 <body>
+    {% include head.html %}
     <main>
-        <img src="/img/logo.svg" alt="Chasing Waterfalls logo">
-        <p>Conversations with the people working to make the web faster for everyone, hosted by <a href="https://timkadlec.com">Tim Kadlec</a>.</p>
-        <ul class="subscribe-list">
-            <li><a href="https://podcasts.apple.com/us/podcast/chasing-waterfalls/id1480725978"><img src="/img/apple-podcasts-icon.png" alt="Subscribe on Apple Podcasts" /></a></li>
-            <li><a href="https://open.spotify.com/show/3p2hroz3EJ40dbZyVOptQX"><img src="/img/spotify-icon.png" alt="Subscribe on Spotify" /></a></li>
-            <li><a href="https://pca.st/23zcfnb2"><img src="/img/pocket-casts-icon.png" alt="Subscribe on Pocket Casts" /></a></li>
-            <li><a href="https://www.stitcher.com/podcast/tim-kadlec/chasing-waterfalls?refid=stpr"><img src="/img/stitcher-icon.png" alt="Subscribe on Stitcher" /></a></li>
-            <li><a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS9rdkg4S0ZHaw%3D%3D"><img src="/img/google-podcasts-icon.png" alt="Subscribe with Google Podcasts" /></a></li>
-            <li><a href="https://feeds.simplecast.com/kvH8KFGk"><img src="/img/rss-icon.png" alt="Subscribe via RSS" /></a></li>
-        </ul>
-        <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/d11f5e02-9d79-4fc9-8590-bee34200eaa9?dark=true"></iframe>
-        <p class="copy">Interested in being a guest on the podcast or sponsoring? <a href="mailto:tim@timkadlec.com">Get in touch.</a></p>
+        <iframe class="trailer" title="Chasing Waterfalls Trailer" height="200px" width="100%" frameborder="no" scrolling="no" seamless="" src="https://player.simplecast.com/d11f5e02-9d79-4fc9-8590-bee34200eaa9?dark=true"></iframe>
+        <h2>Episodes</h2>
+        {% for episode in collections.episodes %}
+        <div class="episode-preview">
+            <div class="episode-guest-photo">
+                <p class="episode-number"><span class="is-vishidden">Episode</span> {{episode.data.episodeNum}}</p>
+                <picture>
+                    <source type="image/webp" srcset="/img{{ episode.data.guestPhoto }}.webp">
+                    <img src="/img{{ episode.data.guestPhoto }}.jpg" alt="Headshot of {{ episode.data.guestName }}"/>
+                </picture>
+            </div>
+            <div class="hed">
+                <h2>{{ episode.data.title }}</h2>
+                <p>{{ episode.data.lede }}</p>
+                <p><a href="{{ episode.url}}">Listen to the episode or read the transcript</a></p>
+            </div>
+            
+        </div>
+        {% endfor %}
     </main>
-    <script type="text/javascript">
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js', {
-            scope: '/'
-        });
-    }
-    </script>
+    {% include footer.html %}
 </body>
 </html>

@@ -1,0 +1,43 @@
+{% include siteHead.html %}
+<body class="inner">
+    {% include head.html %}
+    <main class="episode">
+        <div class="episode-intro">
+            <h2>{{ title }}</h2>
+            <div class="episode-guest-photo">
+            <p class="episode-number"><span class="is-vishidden">Episode</span> {{ episodeNum }}</p>
+            <picture>
+                <source type="image/webp" srcset="/img{{ guestPhoto }}.webp">
+                <img src="/img{{ guestPhoto }}.jpg" alt="Headshot of {{ guestName }}"/>
+            </picture>
+            </div>
+            <p class="lede">{{ lede }}</p>
+            <iframe title="{{ title }} podcast episode" height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/{{ episode-slug }}?dark=true"></iframe>
+            <div class="sponsor">
+                <h3>Sponsored by:</h3>
+                <a href="{{ sponsorLink }}">
+                    <picture>
+                        <source type="image/webp" srcset="/img{{ sponsorImage }}.webp">
+                        <img src="/img{{ sponsorImage }}.png" alt="{{ sponsorImageAlt }}"/>
+                    </picture>
+                </a>
+                <p>{{sponsorBlurb}}</p>
+            </div>
+            <div class="links">
+                <h3>Links</h3>
+                <ul>
+                {% for link in links  %}
+                    <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+        
+        <article class="transcript">
+            <h3 name="transcript">Transcript</h3>
+        {{ content }}
+        </article>
+    </main>
+    {% include footer.html %}
+</body>
+</html>

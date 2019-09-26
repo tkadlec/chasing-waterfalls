@@ -9,6 +9,18 @@ module.exports = function(config) {
 	config.addFilter('cssmin', function(code) {
 		return new CleanCSS({}).minify(code).styles;
 	});
+
+	let markdownIt = require("markdown-it");
+	let markdownItDefList = require("markdown-it-deflist");
+	let options = {
+	  html: true,
+	  linkify: true,
+	  breaks: true
+	};
+	let markdownLib = markdownIt(options).use(markdownItDefList);
+	
+	config.setLibrary("md", markdownLib);
+
 	return {
 		dir: { input: 'site', output: 'dist', includes: '_includes' },
 		passthroughFileCopy: true
