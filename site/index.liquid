@@ -4,7 +4,7 @@
     <main>
         <iframe class="trailer" title="Chasing Waterfalls Trailer" height="200px" width="100%" frameborder="no" scrolling="no" seamless="" src="https://player.simplecast.com/d11f5e02-9d79-4fc9-8590-bee34200eaa9?dark=true"></iframe>
         <h2>Episodes</h2>
-        {% for episode in collections.episodes %}
+        {% for episode in collections.episodes reversed %}
         <div class="episode-preview">
             <div class="episode-guest-photo">
                 <p class="episode-number"><span class="is-vishidden">Episode</span> {{episode.data.episodeNum}}</p>
@@ -14,7 +14,7 @@
                 </picture>
             </div>
             <div class="hed">
-                <h2>{{ episode.data.title }}</h2>
+                <h2><a href="{{ episode.url}}">{{ episode.data.title }}</a></h2>
                 <p>{{ episode.data.lede }}</p>
                 <p><a href="{{ episode.url}}">Listen to the episode or read the transcript</a></p>
             </div>

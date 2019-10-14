@@ -446,6 +446,9 @@ h3 + dl{
 .episode-preview h2{
     font-size: 2em;
 }
+h2 a{
+    text-decoration: none;
+}
 @media screen and (min-width: 45em) {
     .episode-preview {
         display: grid;
