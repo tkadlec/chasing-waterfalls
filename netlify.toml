@@ -1,0 +1,12 @@
+[build]
+publish = "dist"
+
+  [build.lifecycle]
+  build = [
+    "eleventy"
+  ]
+
+[plugins]
+
+  [plugins.speedcurveDeploy]
+  type = "./plugins/netlify-plugin-speedcurve-deploy"
