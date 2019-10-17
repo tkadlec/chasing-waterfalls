@@ -1,7 +1,9 @@
 build:
-  command: "eleventy"
-  publish: "dist"
-  plugins:
-    # local plugin
-    speedcurveDeploy:
-      ./plugins/netlify-plugin-speedcurve-deploy
+  publish: dist
+  lifecycle:
+    build:
+      - eleventy
+plugins:
+  # local plugin
+  speedcurveDeploy:
+    type: ./plugins/netlify-plugin-speedcurve-deploy
