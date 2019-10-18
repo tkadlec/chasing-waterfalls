@@ -4,6 +4,5 @@ build:
     build:
       - eleventy
 plugins:
-  # local plugin
-  speedcurveDeploy:
+  netlify-build-plugin-speedcurve:
     type: ./plugins/netlify-plugin-speedcurve-deploy
