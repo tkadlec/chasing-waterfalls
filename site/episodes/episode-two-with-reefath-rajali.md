@@ -1,4 +1,5 @@
 ---
+date: 2019-10-14
 title:  "From Hackathon to Foundational Performance with Reefath Rajali"
 episode-slug: "12c2ed8c-3857-413b-a976-7f33d051b079"
 sponsorName: "SpeedCurve"

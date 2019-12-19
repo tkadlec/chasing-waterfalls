@@ -1,4 +1,5 @@
 ---
+date: 2019-12-19
 title:  "Performance for the Long-Haul with Katie Hempenius"
 episode-slug: "ecebaf65-7b84-440a-a352-9ddce4e2eb14"
 sponsorName: "SpeedCurve"

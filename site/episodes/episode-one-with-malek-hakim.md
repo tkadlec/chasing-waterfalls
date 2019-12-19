@@ -1,4 +1,5 @@
 ---
+date: 2019-09-26
 title:  "Scaling a Culture of Performance with Malek Hakim"
 episode-slug: "8fbe98cc-d8df-4ac0-bc09-d66e15ab73a4"
 sponsorName: "SpeedCurve"
