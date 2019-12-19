@@ -5,4 +5,4 @@ build:
       - eleventy
 plugins:
   netlify-build-plugin-speedcurve:
-    type: ./plugins/netlify-plugin-speedcurve-deploy
+    type: netlify-build-plugin-speedcurve
