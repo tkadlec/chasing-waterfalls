@@ -7,7 +7,7 @@ guestPhoto: "/guests/katie-hempenius"
 guestName: "Katie Hempenius"
 episodeNum: 3
 lede: |
-  Many people want their organization to prioritize performance, but where do you start? In this episode, Reefath Rajali—a mobile developer advocate at PayPal—talks about PayPal's performance journey, starting with a simple, lightweight prototype built during a hackathon. She discusses the hard work and challenges that went into getting organizational buy-in and the cultural changes necessary to make performance a foundational principle.
+  A lot of work falls under the umbrella of "web performance" and it's hard to know where to focus, both for quick wins and for long-term maintainability. In this episode, Katie Hempenius talks about everything from JavaScript and image weight, to third-party challenges, budgets and the importance of organizational support.
 links:
  - url: https://twitter.com/katiehempenius
    text: "Katie Hempenius on Twitter"
