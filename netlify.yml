@@ -1,8 +1,7 @@
 build:
   publish: dist
   lifecycle:
-    build:
+    onBuild:
       - eleventy
 plugins:
-  netlify-build-plugin-speedcurve:
-    type: netlify-build-plugin-speedcurve
+  - type: netlify-build-plugin-speedcurve
