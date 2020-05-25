@@ -1,2 +1,2 @@
 [[plugins]]
-package = "../netlify-plugins/netlify-plugin-speedcurve-deploy"
+package = "netlify-plugin-speedcurve-deploy"
