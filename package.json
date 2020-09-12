@@ -23,6 +23,6 @@
   "dependencies": {
     "markdown-it-deflist": "^2.0.3",
     "netlify-build-plugin-speedcurve": "^1.0.5",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   }
 }
